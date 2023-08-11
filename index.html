@@ -27,15 +27,8 @@
             <li><a href="./index.html" class="after-class"> Studio </a></li>
             <li><a href="./portfolio.html"> Portfolio </a></li>
             <li>
-              <a href="#"
-                ><button type="button" class="contact-button" data-modal-open>
-                  Contacts
-                </button></a
-              >
+              <a href="#"> Contacts </a>
             </li>
-            <div class="modal is-hidden" data-modal>
-              <button class="modal-button" data-modal-close>X</button>
-            </div>
           </ul>
         </nav>
         <ul class="contacts-list">
@@ -53,10 +46,48 @@
       </div>
     </header>
     <main>
+      <div class="modal is-hidden" data-modal>
+        <div class="modal-body">
+          <button class="modal-button" data-modal-close>
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="12" cy="12" r="12" fill="#E7E9FC" />
+              <circle
+                cx="12"
+                cy="12"
+                r="11.5"
+                stroke="black"
+                stroke-opacity="0.1"
+              />
+              <g clip-path="url(#clip0_297024_948)">
+                <path
+                  d="M16 8.80571L15.1943 8L12 11.1943L8.80571 8L8 8.80571L11.1943 12L8 15.1943L8.80571 16L12 12.8057L15.1943 16L16 15.1943L12.8057 12L16 8.80571Z"
+                  fill="#2E2F42"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_297024_948">
+                  <rect
+                    width="8"
+                    height="8"
+                    fill="white"
+                    transform="translate(8 8)"
+                  />
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
+        </div>
+      </div>
       <section class="hero-section">
         <div class="container">
           <h1>Effective Solutions for Your Business</h1>
-          <button type="button">Order Service</button>
+          <button type="button" data-modal-open>Order Service</button>
         </div>
       </section>
       <section class="main-article section">
@@ -117,30 +148,39 @@
       <section class="doing-section section">
         <div class="container">
           <h2 class="doing-heading">What are we doing</h2>
-          <ul class="list doing-img">
+          <ul>
             <li>
-              <img
-                src="./images/img1.jpg"
-                alt="Monitor iMac Studio with charts"
-                width="360"
-                height="300"
-              />
+              <div class="doing-img">
+                <img
+                  src="./images/img1.jpg"
+                  alt="Monitor iMac Studio with charts"
+                  width="360"
+                  height="300"
+                />
+                <!-- <div class="doing-discription"><p>Lorem, ipsum dolor.</p></div> -->
+              </div>
             </li>
             <li>
-              <img
-                src="./images/img2.jpg"
-                alt="Iphone with layers of different contacts in messages"
-                width="360"
-                height="300"
-              />
+              <div class="doing-img">
+                <img
+                  src="./images/img2.jpg"
+                  alt="Iphone with layers of different contacts in messages"
+                  width="360"
+                  height="300"
+                />
+                <!-- <div class="doing-discription"><p>Lorem, ipsum dolor.</p></div> -->
+              </div>
             </li>
             <li>
-              <img
-                src="./images/img3.jpg"
-                alt="Phone held in hand on the background of a laptop"
-                width="360"
-                height="300"
-              />
+              <div class="doing-img">
+                <img
+                  src="./images/img3.jpg"
+                  alt="Phone held in hand on the background of a laptop"
+                  width="360"
+                  height="300"
+                />
+                <!-- <div class="doing-discription"><p>Lorem, ipsum dolor.</p></div> -->
+              </div>
             </li>
           </ul>
         </div>
