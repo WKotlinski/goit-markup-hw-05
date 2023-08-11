@@ -152,14 +152,11 @@ img {
   letter-spacing: 0.02em;
   padding: 40px 32px 16px;
 }
-.overlay-container:hover .overlay {
+.portfolio-list-item:hover .overlay {
   transform: translateY(0);
   transition: var(--cubic);
 }
 
-.box:hover .overlay {
-  transform: translatey(0);
-}
 /* Sekcja nagłówkowa * */
 header .container,
 header .container nav ul,
